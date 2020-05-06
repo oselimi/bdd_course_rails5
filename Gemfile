@@ -38,6 +38,7 @@ end
 
 group :test do
   gem 'capybara', '~> 3.32'
+  gem 'guard-rspec', '~> 4.7.2'
 end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
@@ -46,9 +47,9 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'guard', '~> 2.16'
-  gem 'guard-rspec', '~> 4.7'
-  gem 'guard-cucumber', '~> 3.0'
+  gem 'guard', '~> 2.16.2'
+
+  gem 'guard-cucumber', '~> 2.1.2'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
