@@ -1,0 +1,14 @@
+<h3 class="text-center">Adding new article</h3>
+
+<%= form_with model: @article, url: '/articles', local: true  do |f| %>
+  <ul>
+    <li><%= f.label :title %></li>
+    <li><%= f.text_field :title %></li><br>
+    <li><%= f.label :body %></li>
+    <li><%= f.text_field :body %></li>
+  </ul>
+  <br>
+
+  <%= f.submit "Create Article" %>
+
+<% end %>
