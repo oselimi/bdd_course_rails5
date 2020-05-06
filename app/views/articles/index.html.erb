@@ -1,1 +1,15 @@
 <%= link_to 'New Article', new_article_path %>
+<br>
+
+<% if @articles.empty? %>
+  <h1 id="no-articles">No articles created</h1>
+<% else %>
+  <table>
+    <% @articles.each do |article| %>
+      <tr>
+        <td><%= link_to article.title, article_path(article) %></td>
+        <td><%= truncate(article.body, length: 500) %></td>
+      <tr>
+    <% end %>
+  </table>
+<% end %>
