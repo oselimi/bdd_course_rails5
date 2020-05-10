@@ -23,7 +23,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem 'devise'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
@@ -48,7 +48,6 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'guard', '~> 2.16.2'
-
   gem 'guard-cucumber', '~> 2.1.2'
 end
 
